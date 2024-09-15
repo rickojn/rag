@@ -24,14 +24,19 @@ def retrieve_most_relevant_paragraph(query, collection):
         n_results = 2
     )
 
-
+document_name = "gov"
 chroma_client = chromadb.Client()
-collection = chroma_client.get_or_create_collection("paragraphs")
+collection = chroma_client.get_or_create_collection(document_name)
 
-paragraphs = extract_paragraphs_from_docx("input-docs/Employment-Contract-08-21-01.docx")
+paragraphs = extract_paragraphs_from_docx(f"input-docs/{document_name}.docx")
+print(f"all paragraphs: ")
+for paragraph in paragraphs:
+    print(paragraph)
 unique_paragraphs = list(set(paragraphs))
 embed_and_store_paragraphs(unique_paragraphs, collection)
-query = "what sick pay is available?"
+query = "During this Agreement the Contractor shall be an independent contractor and not the employee of the Client"
 results = retrieve_most_relevant_paragraph(query, collection)
+
+print(f"query = {query}")
 
 print(results)
