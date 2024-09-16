@@ -61,19 +61,42 @@ def load_and_chunk_docx(doc_name, max_chunk_size=5000):
     
     return overlapping_chunks
 
+def expand_query(query):
+    return query
+
+def vectorize_and_retrieve(chunks, query):
+    # Create a TF-IDF Vectorizer
+    vectorizer = TfidfVectorizer(stop_words='english')
+    doc_vectors = vectorizer.fit_transform(chunks)
+    
+    # Expand the query and vectorize it
+    expanded_query = expand_query(query)
+    query_vector = vectorizer.transform([expanded_query])
+    
+    # Compute cosine similarity between the query and document chunks
+    similarity_scores = cosine_similarity(query_vector, doc_vectors).flatten()
+    
+    # Retrieve the top matching chunk
+    top_chunk_idx = np.argmax(similarity_scores)
+    
+    return chunks[top_chunk_idx], similarity_scores[top_chunk_idx]    
+
+
+
+
 
 
 
 
 def main():
     docx_name = 'mog'
-    query = 'What is the termination clause in this contract?'
     chunks = load_and_chunk_docx(docx_name)
-    print("chunks: ")
-    for index, chunk in enumerate(chunks):
-        print(f"chunk{index}")
-        print(chunk)
-
+    query = 'What laws govern this contract?'
+    most_similar_chunk, similarity =  vectorize_and_retrieve(chunks, query)
+    print(f"query: {query}")
+    print("most similar chunk to query:")
+    print(most_similar_chunk)
+    print(f"similarity: {similarity}")
 
 if __name__ == "__main__":
     main()
