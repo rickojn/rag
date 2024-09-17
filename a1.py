@@ -11,6 +11,8 @@ from nltk.tokenize import sent_tokenize
 import numpy as np
 import re
 import chromadb
+import requests
+import json
 
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -74,6 +76,8 @@ def expand_query(query):
                 expanded_query += f" {synonym}"
     
     return expanded_query
+
+
 def vectorize_and_retrieve(chunks, query):
     # Create a TF-IDF Vectorizer
     vectorizer = TfidfVectorizer(stop_words='english')
@@ -95,7 +99,24 @@ def vectorize_and_retrieve(chunks, query):
 
 
 
+def query_document(query, chunks):
+    url = "http://localhost:11434/api/generate"
+    data = {
+    "model": "llama3.1",
+    "prompt": "Why is the sky blue?",
+    "stream": False
+    }
 
+    headers = {
+        'Content-Type': 'application/json'
+    }
+
+    response = requests.post(url, data=json.dumps(data), headers=headers)
+
+    if response.status_code == 200:
+        print("Response:", response.json())
+    else:
+        print(f"Error: {response.status_code}, {response.text}")
 
 
 
@@ -103,7 +124,7 @@ def vectorize_and_retrieve(chunks, query):
 def main():
     docx_name = 'mog'
     chunks = load_and_chunk_docx(docx_name)
-    query = "When can the parties to this contract employ the other party's employees?"
+    query = input("Please input your query: ")
     most_similar_chunk, similarity =  vectorize_and_retrieve(chunks, query)
     print("most similar chunk to query:")
     print(most_similar_chunk)
