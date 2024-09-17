@@ -62,15 +62,27 @@ def load_and_chunk_docx(doc_name, max_chunk_size=5000):
     return overlapping_chunks
 
 def expand_query(query):
-    return query
-
+    expanded_query = query
+    words = query.split()
+    
+    for word in words:
+        synonyms = wordnet.synsets(word)
+        if synonyms:
+            # Get a synonym if available
+            synonym = synonyms[0].lemmas()[0].name()
+            if synonym != word:
+                expanded_query += f" {synonym}"
+    
+    return expanded_query
 def vectorize_and_retrieve(chunks, query):
     # Create a TF-IDF Vectorizer
     vectorizer = TfidfVectorizer(stop_words='english')
     doc_vectors = vectorizer.fit_transform(chunks)
     
     # Expand the query and vectorize it
+    print(f"query: {query}")
     expanded_query = expand_query(query)
+    print(f"expanded query: {expanded_query}")
     query_vector = vectorizer.transform([expanded_query])
     
     # Compute cosine similarity between the query and document chunks
@@ -91,9 +103,8 @@ def vectorize_and_retrieve(chunks, query):
 def main():
     docx_name = 'mog'
     chunks = load_and_chunk_docx(docx_name)
-    query = 'What laws govern this contract?'
+    query = "When can the parties to this contract employ the other party's employees?"
     most_similar_chunk, similarity =  vectorize_and_retrieve(chunks, query)
-    print(f"query: {query}")
     print("most similar chunk to query:")
     print(most_similar_chunk)
     print(f"similarity: {similarity}")
