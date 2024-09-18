@@ -1,7 +1,3 @@
-import os
-import sys
-__import__('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import docx2txt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -10,10 +6,8 @@ from nltk.corpus import wordnet
 from nltk.tokenize import sent_tokenize
 import numpy as np
 import re
-import chromadb
 import requests
 import json
-import heapq
 
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -22,10 +16,19 @@ nltk.download('punkt')
 
 
 #  load and chunk the .docx file
+
+'''
+This splits the document text into sentences. It then creates chunks <= 5000 characters
+which contain either a single part of a sentence or one or more whole sentences. That is,
+sentences are not split accross chunks so that the LLM has coherent english to work with.
+It first creates non-overlapping chunks then takes these chunks and implements a rolling window
+of one sentence so that all subsequences of sentences are captured. This will increase the
+likelyhood that the appropriate context will be supplied to the LLM.
+'''
 def load_and_chunk_docx(doc_name, max_chunk_size=5000):
    
     text = docx2txt.process(f"./input-docs/{doc_name}.docx")
-    text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'\s+', ' ', text) #remove large spaces
     sentences = sent_tokenize(text)
     current_chunk = ""
     chunks = []
@@ -64,6 +67,13 @@ def load_and_chunk_docx(doc_name, max_chunk_size=5000):
     
     return overlapping_chunks
 
+
+'''
+This a simple query expansion technique that will add synonyms of words contained in the
+query. This will increase the recall rate of the sparse search. This would not add much if
+any value if a dense search was being done with a decent embedding model since the model
+could be expected to match synonyms as well as exact matches.
+'''
 def expand_query(query):
     expanded_query = query
     words = query.split()
@@ -79,6 +89,15 @@ def expand_query(query):
     return expanded_query
 
 
+
+'''
+Sparse Search: Generate TF-IDF vectors for the chunks and query.
+Then select the most similar chunk vector to the query vector
+using the cosine similarity metric. The idea is that the chunk
+selected will be most similar to the query + synonyms in terms
+of words that appear in both but are less common in all of the 
+chunks taken together.
+'''
 def vectorize_and_retrieve(chunks, query):
     # Create a TF-IDF Vectorizer
     vectorizer = TfidfVectorizer(stop_words='english')
@@ -99,7 +118,9 @@ def vectorize_and_retrieve(chunks, query):
     return chunks[top_chunk_idx], similarity_scores[top_chunk_idx]    
 
 
-
+'''
+Pass the query and most similar chunk to the LLM together. 
+'''
 def query_document(query, chunk):
     url = "http://192.168.137.2:11434/api/generate"
     prompt = f"""
@@ -116,7 +137,8 @@ def query_document(query, chunk):
     data = {
     "model": "llama3.1",
     "prompt": prompt,
-    "stream": False
+    "stream": False,
+    "temperature": 0
     }
 
     headers = {
@@ -128,11 +150,27 @@ def query_document(query, chunk):
     response = requests.post(url, data=json.dumps(data), headers=headers)
 
     if response.status_code == 200:
-        print("Response:", json.loads(response.text)["response"])
+        return json.loads(response.text)["response"]
     else:
-        print(f"Error: {response.status_code}, {response.text}")
+        return f"Error: {response.status_code}, {response.text}"
 
 
+
+def answer_is_hallucination(chunk, query, answer):
+    # Technique 1: Simple keyword matching for grounding
+    keywords = query.split()  # Use query terms as a simple heuristic
+    if not any(keyword.lower() in chunk.lower() for keyword in keywords):
+        return True
+
+    # Technique 2: Confidence scoring using cosine similarity
+    vectorizer = TfidfVectorizer()
+    vectors = vectorizer.fit_transform([chunk, answer])
+    similarity_score = cosine_similarity(vectors[0], vectors[1])[0][0]
+    
+    if similarity_score < 0.1:  # Arbitrary low threshold to detect potential hallucinations
+        return True
+    
+    return False
 
 
 def main():
@@ -141,8 +179,12 @@ def main():
     query = input("Please input your query: ")
     most_similar_chunk, similarity =  vectorize_and_retrieve(chunks, query)
     print(f"similarity: {similarity}")
-    print(f"\n Model Response: ")
-    query_document(query, most_similar_chunk)
+    response = query_document(query, most_similar_chunk)
+    print(f"Model Response: ")
+    if answer_is_hallucination(most_similar_chunk, query, response):
+        print("Note: this answer may be a hallucination: ")
+    print(response)
+    
 
 if __name__ == "__main__":
     main()
