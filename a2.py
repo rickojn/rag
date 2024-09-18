@@ -16,8 +16,7 @@ def extract_information_from_pdf(pdf_file):
 
     # Prompt the LLM to extract the requested information
     # prompt = f"Extract the effective date, governing law, and parties from the following contract:\n\n{text}"
-    # prompt = f"You are a legal expert. Read the following document and answer the questions following it:\n\n{text}\n Question: What is the effective date? Do not provide any other information."
-    prompt = f"Read the text of input-docs/contract.pdf"
+    prompt = f"Read the text of {pdf_file}"
     # prompt = f"what is the effective date, governing law, and parties from the following contract"
 
     tools = [
@@ -40,8 +39,9 @@ def extract_information_from_pdf(pdf_file):
     }
   ]
 
-    url = "http://192.168.137.2:11434/api/chat"
-    data = {
+    url_chat = "http://192.168.137.2:11434/api/chat"
+    url_generate = "http://192.168.137.2:11434/api/generate"
+    data_chat = {
         "model": "llama3.1",
         "messages": [
             {
@@ -59,13 +59,24 @@ def extract_information_from_pdf(pdf_file):
 
     print(f"\nprompt being sent: {prompt}\n")
 
-    response = requests.post(url, data=json.dumps(data), headers=headers)
+    response = requests.post(url_chat, data=json.dumps(data_chat), headers=headers)
+    text = load_pdf_text(json.loads(response.text)["message"]["tool_calls"][0]["function"]["arguments"]["pdf_name"])
 
-    if response.status_code == 200:
-        return json.loads(response.text)["message"]["tool_calls"][0]["function"]["arguments"]["pdf_name"]
-        # return response
-    else:
-        return f"Error: {response.status_code}, {response.text}"
+    prompt = f"You are a legal expert. Read the following document and answer the questions following it:\n\n{text}\n Question: What is the effective date? Do not provide any other information."
+    data_generate = {
+        "model": "llama3.1",
+        "prompt": prompt,
+        "stream": False,
+        "temperature": 0
+    }
+
+    print(prompt)
+    response = requests.post(url_generate, data=json.dumps(data_generate), headers=headers)
+
+
+
+    return json.loads(response.text)["response"]
+
 
 
     response = openai.Completion.create(
