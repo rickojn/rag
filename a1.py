@@ -13,6 +13,7 @@ import re
 import chromadb
 import requests
 import json
+import heapq
 
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -84,7 +85,6 @@ def vectorize_and_retrieve(chunks, query):
     doc_vectors = vectorizer.fit_transform(chunks)
     
     # Expand the query and vectorize it
-    print(f"query: {query}")
     expanded_query = expand_query(query)
     print(f"expanded query: {expanded_query}")
     query_vector = vectorizer.transform([expanded_query])
@@ -95,15 +95,27 @@ def vectorize_and_retrieve(chunks, query):
     # Retrieve the top matching chunk
     top_chunk_idx = np.argmax(similarity_scores)
     
+    
     return chunks[top_chunk_idx], similarity_scores[top_chunk_idx]    
 
 
 
-def query_document(query, chunks):
-    url = "http://localhost:11434/api/generate"
+def query_document(query, chunk):
+    url = "http://192.168.137.2:11434/api/generate"
+    prompt = f"""
+    You are a legal assistant. A user is asking a question about the content of a legal contract.
+    Use the following contract text to answer the question truthfully. If you do not know the answer, say so.
+    In your answer only use the content of the Contract Text provided.
+
+    Contract Text:
+    {"".join(chunk)}
+
+    Question: {query}
+    Answer:
+    """
     data = {
     "model": "llama3.1",
-    "prompt": "Why is the sky blue?",
+    "prompt": prompt,
     "stream": False
     }
 
@@ -111,10 +123,12 @@ def query_document(query, chunks):
         'Content-Type': 'application/json'
     }
 
+    print(f"\nprompt being sent: {prompt}\n")
+
     response = requests.post(url, data=json.dumps(data), headers=headers)
 
     if response.status_code == 200:
-        print("Response:", response.json())
+        print("Response:", json.loads(response.text)["response"])
     else:
         print(f"Error: {response.status_code}, {response.text}")
 
@@ -126,9 +140,9 @@ def main():
     chunks = load_and_chunk_docx(docx_name)
     query = input("Please input your query: ")
     most_similar_chunk, similarity =  vectorize_and_retrieve(chunks, query)
-    print("most similar chunk to query:")
-    print(most_similar_chunk)
     print(f"similarity: {similarity}")
+    print(f"\n Model Response: ")
+    query_document(query, most_similar_chunk)
 
 if __name__ == "__main__":
     main()
