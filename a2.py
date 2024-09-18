@@ -57,12 +57,10 @@ def extract_information_from_pdf(pdf_file):
         'Content-Type': 'application/json'
     }
 
-    print(f"\nprompt being sent: {prompt}\n")
-
     response = requests.post(url_chat, data=json.dumps(data_chat), headers=headers)
     text = load_pdf_text(json.loads(response.text)["message"]["tool_calls"][0]["function"]["arguments"]["pdf_name"])
 
-    prompt = f"You are a legal expert. Read the following document and answer the questions following it:\n\n{text}\n Question: What is the effective date? Do not provide any other information."
+    prompt = f"You are a legal expert. Read the following document and answer the questions following it:\n\n{text}\n Question 1: What is the effective date? Question 2: What is the governing law? Question 3: Who are the parties to the contract? Do not provide any other information."
     data_generate = {
         "model": "llama3.1",
         "prompt": prompt,
@@ -70,7 +68,6 @@ def extract_information_from_pdf(pdf_file):
         "temperature": 0
     }
 
-    print(prompt)
     response = requests.post(url_generate, data=json.dumps(data_generate), headers=headers)
 
 
