@@ -10,7 +10,7 @@ def generate_with_seed(
     max_tokens: int,
 ) -> str:
     # reset context & kv-cache so every run starts fresh
-    llm.reset()
+    # llm.reset()
 
     resp = llm(
         prompt,
@@ -24,7 +24,7 @@ def generate_with_seed(
 
 
 if __name__ == "__main__":
-    MODEL_PATH = "/home/rickojn/coding/llama.cpp/models/llama-2-7b-chat.Q4_K_M.gguf"
+    MODEL_PATH = "models/llama-2-7b-chat-hf-q4_k_m.gguf"
     PROMPT     = "Once upon a time"
     SEED1       = 1234
     SEED2       = 5678

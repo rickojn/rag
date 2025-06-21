@@ -1,0 +1,26 @@
+Sending requests to llama.cpp server at http://localhost:8080/completion...
+
+Run #1 with seed 1234:
+Once upon a time, in the small town of Willow Creek, there lived a young girl named Emily. She was a curious and adventurous child, always eager to explore the world around her. One day, while wandering through the woods near her home
+────────────────────────────────────────
+
+Run #2 with seed 1234:
+Once upon a time, in the small town of Willow Creek, there lived a young girl named Emily. She was a curious and adventurous child, always eager to explore the world around her. One day, while wandering through the woods near her home
+────────────────────────────────────────
+
+Run #3 with seed 1234:
+Once upon a time, in the small town of Willow Creek, there lived a young girl named Emily. She was a curious and adventurous child, always eager to explore the world around her. One day, while wandering through the woods near her home
+────────────────────────────────────────
+
+Run #1 with seed 5678:
+Once upon a time, in a small village nestled in the rolling hills of the countryside, there was a little girl named Lily. she was a curious and adventurous child, always eager to explore the world around her. One day, while
+────────────────────────────────────────
+
+Run #2 with seed 5678:
+Once upon a time, in a small village nestled in the rolling hills of the countryside, there was a little girl named Lily. she was a curious and adventurous child, always eager to explore the world around her. One day, while
+────────────────────────────────────────
+
+Run #3 with seed 5678:
+Once upon a time, in a small village nestled in the rolling hills of the countryside, there was a little girl named Lily. she was a curious and adventurous child, always eager to explore the world around her. One day, while
+────────────────────────────────────────
+
