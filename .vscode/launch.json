@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Debug seed.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/seed.py",
+      "console": "integratedTerminal",
+      "env": {
+        "LLAMA_CPP_LIBRARY": "/home/rickojn/coding/llama.cpp/build/bin/libllama.so"
+      },
+      "justMyCode": false
+    },
+    {
+      "name": "llama.cpp",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/env-rag/bin/python",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "args": [
+        "${workspaceFolder}/seed.py"                // the script that calls llama_cpp
+      ],
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "LLAMA_CPP_LIBRARY",
+          "value": "/home/rickojn/coding/llama.cpp/build-debug/libllama.so"
+        }
+      ], 
+      "setupCommands": [
+        {
+          "description": "Allow pending breakpoints until libllama loads",
+          "text": "set breakpoint pending on",
+          "ignoreFailures": true
+        }
+      ],
+      "sourceFileMap": {
+        "/home/rickojn/coding/llama.cpp": "${workspaceFolder}/../llama.cpp"
+      }          
+    }
+  ]
+} 

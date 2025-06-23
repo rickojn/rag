@@ -1,4 +1,9 @@
+import os
+os.environ["LLAMA_CPP_LIB_PATH"] = "/home/rickojn/coding/llama.cpp/build/bin/"
 from llama_cpp import Llama
+import time
+
+
 
 def generate_with_seed(
     llm: Llama,
@@ -24,7 +29,7 @@ def generate_with_seed(
 
 
 if __name__ == "__main__":
-    MODEL_PATH = "models/llama-2-7b-chat-hf-q4_k_m.gguf"
+    MODEL_PATH = "../../models/llama-2-7b-chat.Q4_K_M.gguf"
     PROMPT     = "Once upon a time"
     SEED1       = 1234
     SEED2       = 5678
@@ -34,13 +39,17 @@ if __name__ == "__main__":
     MAXTOKENS  = 50
     N_CTX      = 2048
 
+    pause = 0
+    print(f"pausing for {pause} seconds ...")
+    time.sleep(pause) 
     print(f"loading model from {MODEL_PATH} with context size {N_CTX}...")
 
     llm = Llama(
         model_path=MODEL_PATH,
         n_ctx=N_CTX,
         no_perf=True, 
-        verbose=False,
+        # verbose=False,
+        verbose=True,
     )
 
     print(f"model loaded, generating text with temperature={TEMP}, top_k={TOP_K}, top_p={TOP_P}...\n")
