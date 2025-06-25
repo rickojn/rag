@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Debug seed.py",
+      "name": "Python: Debug",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/seed.py",
+      "program": "${workspaceFolder}/issue.py",
       "console": "integratedTerminal",
       "env": {
         "LLAMA_CPP_LIBRARY": "/home/rickojn/coding/llama.cpp/build/bin/libllama.so"
