@@ -1,0 +1,16 @@
+pausing for 0 seconds ...
+loading model from ../../models/llama-2-7b-chat.Q4_K_M.gguf with context size 2048...
+model loaded, generating text with temperature=1.0, top_k=10, top_p=0.9...
+
+Run #1 with seed 1234:
+One TwoThree (1
+────────────────────────────────────────
+
+Run #2 with seed 1234:
+One TwoThree... by
+────────────────────────────────────────
+
+Run #3 with seed 1234:
+One TwoThree... by
+────────────────────────────────────────
+
