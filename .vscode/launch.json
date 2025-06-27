@@ -8,7 +8,7 @@
       "program": "${workspaceFolder}/issue.py",
       "console": "integratedTerminal",
       "env": {
-        "LLAMA_CPP_LIBRARY": "/home/rickojn/coding/llama.cpp/build/bin/libllama.so"
+        "LLAMA_CPP_LIB_PATH": "/home/rickojn/coding/llama.cpp/build/bin/"
       },
       "justMyCode": false
     },
@@ -22,13 +22,13 @@
       "stopAtEntry": true,
       "externalConsole": false,
       "args": [
-        "${workspaceFolder}/seed.py"                // the script that calls llama_cpp
+        "${workspaceFolder}/issue.py"                // the script that calls llama_cpp
       ],
       "cwd": "${workspaceFolder}",
       "environment": [
         {
-          "name": "LLAMA_CPP_LIBRARY",
-          "value": "/home/rickojn/coding/llama.cpp/build-debug/libllama.so"
+          "name": "LLAMA_CPP_LIB_PATH",
+          "value": "/home/rickojn/coding/llama.cpp/build/bin/"
         }
       ], 
       "setupCommands": [

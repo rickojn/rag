@@ -30,7 +30,8 @@ def generate_with_seed(
 
 if __name__ == "__main__":
     MODEL_PATH = "../../models/llama-2-7b-chat.Q4_K_M.gguf"
-    PROMPT     = "One Two"
+    PROMPT     = "a car"
+    PROMPT1     = "a car sat on the"
     SEED1       = 1234
     SEED2       = 5678
     TEMP       = 1.0
@@ -47,14 +48,14 @@ if __name__ == "__main__":
     llm = Llama(
         model_path=MODEL_PATH,
         n_ctx=N_CTX,
-        no_perf=True, 
-        verbose=False,
+        # no_perf=True, 
+        # verbose=False,
         logits_all=True,
     )
 
     print(f"model loaded, generating text with temperature={TEMP}, top_k={TOP_K}, top_p={TOP_P}...\n")
 
-    for i in range(3):
+    for i in range(4):
         out = generate_with_seed(
             llm=llm,
             prompt=PROMPT,
@@ -65,3 +66,13 @@ if __name__ == "__main__":
             max_tokens=MAXTOKENS,
         )
         print(f"Run #{i+1} with seed {SEED1}:\n{PROMPT}{out}\n{'─'*40}\n")
+    out = generate_with_seed(
+        llm=llm,
+        prompt=PROMPT1,
+        seed=SEED1,
+        temperature=TEMP,
+        top_k=TOP_K,
+        top_p=TOP_P,
+        max_tokens=MAXTOKENS,
+    )
+    print(f"Run with seed {SEED1}:\n{PROMPT1}{out}\n{'─'*40}\n")
