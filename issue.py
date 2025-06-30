@@ -37,7 +37,7 @@ if __name__ == "__main__":
     TEMP       = 1.0
     TOP_K      = 10
     TOP_P      = 0.9
-    MAXTOKENS  = 3
+    MAXTOKENS  = 1
     N_CTX      = 2048
 
     pause = 0
@@ -51,6 +51,10 @@ if __name__ == "__main__":
         # no_perf=True, 
         # verbose=False,
         logits_all=True,
+        n_threads=1,
+        n_threads_batch=1,
+        n_batch=4096,
+        n_ubatch=4096,
     )
 
     print(f"model loaded, generating text with temperature={TEMP}, top_k={TOP_K}, top_p={TOP_P}...\n")
@@ -66,13 +70,13 @@ if __name__ == "__main__":
             max_tokens=MAXTOKENS,
         )
         print(f"Run #{i+1} with seed {SEED1}:\n{PROMPT}{out}\n{'─'*40}\n")
-    out = generate_with_seed(
-        llm=llm,
-        prompt=PROMPT1,
-        seed=SEED1,
-        temperature=TEMP,
-        top_k=TOP_K,
-        top_p=TOP_P,
-        max_tokens=MAXTOKENS,
-    )
-    print(f"Run with seed {SEED1}:\n{PROMPT1}{out}\n{'─'*40}\n")
+    # out = generate_with_seed(
+    #     llm=llm,
+    #     prompt=PROMPT1,
+    #     seed=SEED1,
+    #     temperature=TEMP,
+    #     top_k=TOP_K,
+    #     top_p=TOP_P,
+    #     max_tokens=MAXTOKENS,
+    # )
+    # print(f"Run with seed {SEED1}:\n{PROMPT1}{out}\n{'─'*40}\n")

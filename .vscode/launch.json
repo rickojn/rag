@@ -13,13 +13,13 @@
       "justMyCode": false
     },
     {
-      "name": "llama.cpp",
+      "name": "C++",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/env-rag/bin/python",
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
-      "stopAtEntry": true,
+      "stopAtEntry": false,
       "externalConsole": false,
       "args": [
         "${workspaceFolder}/issue.py"                // the script that calls llama_cpp
