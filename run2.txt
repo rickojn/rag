@@ -19,6 +19,7 @@ CPY cache_v_l0 (view) (copy of Vcur-0 (reshaped) (transposed))  1st element 3rd 
 VIEW cache_v_l0 (view)  1st element 3rd token = -0.000000
 VIEW cache_k_l0 (view)  1st element 3rd token = -0.000000
 PERMUTE Qcur-0 (permuted)  1st element 3rd token = 1.929467
+things different here!
 MUL_MAT node_20  1st element 3rd token = 21.258202
 SOFT_MAX node_21  1st element 3rd token = 0.127959
 MUL_MAT node_22  1st element 3rd token = -0.000346
