@@ -1,3 +1,5 @@
+import re
+
 def extract_sections(input_file, marker):
     with open(input_file, 'r') as f:
         lines = f.readlines()
@@ -15,15 +17,30 @@ def extract_sections(input_file, marker):
 
     return section1, section2
 
+def extract_element_number(line):
+    # Match 'element = <number>' at the start of the line, ignoring leading whitespace
+    match = re.search(r'element\s*=\s*(-?\d+(?:\.\d+)?)', line)
+    return float(match.group(1)) if match else None
+
 def interleave_sections(section1, section2):
-    # Interleave lines from both sections
+    # Interleave lines from both sections, appending '>>>' if element numbers differ
     interleaved = []
     max_len = max(len(section1), len(section2))
     for i in range(max_len):
-        if i < len(section1):
-            interleaved.append(section1[i])
-        if i < len(section2):
-            interleaved.append(section2[i])
+        line1 = section1[i] if i < len(section1) else None
+        line2 = section2[i] if i < len(section2) else None
+
+        if line1 and line2:
+            num1 = extract_element_number(line1)
+            num2 = extract_element_number(line2)
+            if num1 != num2:
+                # Prepend '>>>' to both lines if numbers differ
+                line1 = '>>> ' + line1
+                line2 = '>>> ' + line2
+        if line1:
+            interleaved.append(line1)
+        if line2:
+            interleaved.append(line2)
     return interleaved
 
 if __name__ == "__main__":
@@ -32,5 +49,5 @@ if __name__ == "__main__":
         marker='db_num_tokens ='
     )
     interleaved = interleave_sections(section1, section2)
-    with open('interleaved.txt', 'w') as out_f:
+    with open('interleaved_diff.txt', 'w') as out_f:
         out_f.writelines(interleaved)
