@@ -1,0 +1,65 @@
+Node 22
+
+Run 1
+
+((float *) node->data)[4096*2]
+0.00627442822
+((float*)(node->src[0]->data))[4096 * 2]
+-2.46576466e-19
+((float*)(node->src[1]->data))[4096 * 2]
+0.22012946
+node->src[0]->type
+GGML_TYPE_F16
+node->src[1]->type
+GGML_TYPE_F32
+node->type
+GGML_TYPE_F32
+node->src[0]->op
+GGML_OP_VIEW
+node->src[1]->op
+GGML_OP_SOFT_MAX
+
+
+Run 2
+
+((float *) node->data)[0]
+-0.00034612231
+
+((float*)(node->src[0]->data))[0]
+-1.75416948e-19
+((float*)(node->src[1]->data))[0]
+0.127958566
+node->src[0]->type
+GGML_TYPE_F16
+node->src[1]->type
+GGML_TYPE_F32
+node->type
+GGML_TYPE_F32
+node->src[0]->op
+GGML_OP_VIEW
+node->src[1]->op
+GGML_OP_SOFT_MAX
+node->src[0]->op
+GGML_OP_VIEW
+node->src[1]->op
+GGML_OP_SOFT_MAX
+node->src[0]->ne[0]
+32
+node->src[0]->ne[1]
+128
+node->src[0]->ne[2]
+32
+node->src[0]->ne[3]
+1
+node->src[1]->ne[0]
+32
+node->src[1]->ne[1]
+1
+node->src[1]->ne[2]
+32
+node->src[1]->ne[2]
+32
+
+
+VIEW cache_v_l0 (view) element = 0.000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+VIEW cache_v_l0 (view) element = 0.000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
