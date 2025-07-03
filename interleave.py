@@ -19,7 +19,7 @@ def extract_sections(input_file, marker):
 
 def extract_element_number(line):
     # Match 'element = <number>' at the start of the line, ignoring leading whitespace
-    match = re.search(r'element\s*=\s*(-?\d+(?:\.\d+)?)', line)
+    match = re.search(r'el\s*=\s*(-?\d+(?:\.\d+)?)', line)
     return float(match.group(1)) if match else None
 
 def interleave_sections(section1, section2):
