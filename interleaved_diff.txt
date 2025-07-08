@@ -23,17 +23,17 @@ db_num_tokens = 1
 #10: RESHAPE Vcur-0 el = 0.01658554 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 #10: RESHAPE Vcur-0 el = 0.01658554 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #11: VIEW cache_k_l0 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #11: VIEW cache_k_l0 (view) el = 0.00000005 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #12: CPY cache_k_l0 (view) (copy of Kcur-0) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #12: CPY cache_k_l0 (view) (copy of Kcur-0) el = 0.00000005 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #11: VIEW cache_k_l0 (view) el = 0.22009277 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#12: CPY cache_k_l0 (view) (copy of Kcur-0) el = 0.22009277 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#12: CPY cache_k_l0 (view) (copy of Kcur-0) el = 0.22009277 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 #13: RESHAPE Vcur-0 (reshaped) el = 0.01658554 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 #13: RESHAPE Vcur-0 (reshaped) el = 0.01658554 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#14: TRANSPOSE Vcur-0 (reshaped) (transposed) el = 0.01658554 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#14: TRANSPOSE Vcur-0 (reshaped) (transposed) el = 0.01658554 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#15: VIEW cache_v_l0 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#15: VIEW cache_v_l0 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#16: CPY cache_v_l0 (view) (copy of Vcur-0 (reshaped) (transposed)) el = -0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#16: CPY cache_v_l0 (view) (copy of Vcur-0 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #14: TRANSPOSE Vcur-0 (reshaped) (transposed) el = 0.00151885 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #14: TRANSPOSE Vcur-0 (reshaped) (transposed) el = 0.01658554 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #15: VIEW cache_v_l0 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #15: VIEW cache_v_l0 (view) el = 0.01658630 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#16: CPY cache_v_l0 (view) (copy of Vcur-0 (reshaped) (transposed)) el = 0.01658630 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#16: CPY cache_v_l0 (view) (copy of Vcur-0 (reshaped) (transposed)) el = 0.01658630 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #19: PERMUTE Qcur-0 (permuted) el = 0.03234796 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #19: PERMUTE Qcur-0 (permuted) el = 1.92946732 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #22: MUL_MAT node_22 el = -0.00034612 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -75,17 +75,17 @@ db_num_tokens = 1
 >>> #44: RESHAPE Vcur-1 el = -0.06788226 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #44: RESHAPE Vcur-1 el = -0.06788225 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #45: VIEW cache_k_l1 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #45: VIEW cache_k_l1 (view) el = -0.22044349 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #46: CPY cache_k_l1 (view) (copy of Kcur-1) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #46: CPY cache_k_l1 (view) (copy of Kcur-1) el = -0.22044349 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #45: VIEW cache_k_l1 (view) el = -0.99218750 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#46: CPY cache_k_l1 (view) (copy of Kcur-1) el = -0.99218750 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#46: CPY cache_k_l1 (view) (copy of Kcur-1) el = -0.99218750 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #47: RESHAPE Vcur-1 (reshaped) el = -0.06788226 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #47: RESHAPE Vcur-1 (reshaped) el = -0.06788225 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #48: TRANSPOSE Vcur-1 (reshaped) (transposed) el = -0.06788226 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #48: TRANSPOSE Vcur-1 (reshaped) (transposed) el = -0.02022380 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #48: TRANSPOSE Vcur-1 (reshaped) (transposed) el = -0.06788225 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#49: VIEW cache_v_l1 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#49: VIEW cache_v_l1 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#50: CPY cache_v_l1 (view) (copy of Vcur-1 (reshaped) (transposed)) el = -0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#50: CPY cache_v_l1 (view) (copy of Vcur-1 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #49: VIEW cache_v_l1 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #49: VIEW cache_v_l1 (view) el = -0.06787109 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#50: CPY cache_v_l1 (view) (copy of Vcur-1 (reshaped) (transposed)) el = -0.06787109 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#50: CPY cache_v_l1 (view) (copy of Vcur-1 (reshaped) (transposed)) el = -0.06787109 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #53: PERMUTE Qcur-1 (permuted) el = -0.36539873 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #53: PERMUTE Qcur-1 (permuted) el = -0.45025444 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #56: MUL_MAT node_56 el = 0.01428809 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -127,17 +127,17 @@ db_num_tokens = 1
 >>> #78: RESHAPE Vcur-2 el = -0.00011422 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #78: RESHAPE Vcur-2 el = -0.00011421 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #79: VIEW cache_k_l2 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #79: VIEW cache_k_l2 (view) el = 0.00000007 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #80: CPY cache_k_l2 (view) (copy of Kcur-2) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #80: CPY cache_k_l2 (view) (copy of Kcur-2) el = 0.00000007 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #79: VIEW cache_k_l2 (view) el = -2.09375000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#80: CPY cache_k_l2 (view) (copy of Kcur-2) el = -2.09375000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#80: CPY cache_k_l2 (view) (copy of Kcur-2) el = -2.09375000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #81: RESHAPE Vcur-2 (reshaped) el = -0.00011422 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #81: RESHAPE Vcur-2 (reshaped) el = -0.00011421 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #82: TRANSPOSE Vcur-2 (reshaped) (transposed) el = -0.00011422 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #82: TRANSPOSE Vcur-2 (reshaped) (transposed) el = 0.00684436 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #82: TRANSPOSE Vcur-2 (reshaped) (transposed) el = -0.00011421 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#83: VIEW cache_v_l2 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#83: VIEW cache_v_l2 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#84: CPY cache_v_l2 (view) (copy of Vcur-2 (reshaped) (transposed)) el = -0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#84: CPY cache_v_l2 (view) (copy of Vcur-2 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #83: VIEW cache_v_l2 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #83: VIEW cache_v_l2 (view) el = -0.00011420 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#84: CPY cache_v_l2 (view) (copy of Vcur-2 (reshaped) (transposed)) el = -0.00011420 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#84: CPY cache_v_l2 (view) (copy of Vcur-2 (reshaped) (transposed)) el = -0.00011420 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #87: PERMUTE Qcur-2 (permuted) el = 0.07249360 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #87: PERMUTE Qcur-2 (permuted) el = -0.89430499 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #90: MUL_MAT node_90 el = 0.00360128 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -179,17 +179,17 @@ db_num_tokens = 1
 >>> #112: RESHAPE Vcur-3 el = 0.32298368 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #112: RESHAPE Vcur-3 el = 0.32298362 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #113: VIEW cache_k_l3 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #113: VIEW cache_k_l3 (view) el = -0.02138751 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #114: CPY cache_k_l3 (view) (copy of Kcur-3) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #114: CPY cache_k_l3 (view) (copy of Kcur-3) el = -0.02138751 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #113: VIEW cache_k_l3 (view) el = 0.30346680 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#114: CPY cache_k_l3 (view) (copy of Kcur-3) el = 0.30346680 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#114: CPY cache_k_l3 (view) (copy of Kcur-3) el = 0.30346680 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #115: RESHAPE Vcur-3 (reshaped) el = 0.32298368 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #115: RESHAPE Vcur-3 (reshaped) el = 0.32298362 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #116: TRANSPOSE Vcur-3 (reshaped) (transposed) el = 0.32298368 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #116: TRANSPOSE Vcur-3 (reshaped) (transposed) el = -0.00391202 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #116: TRANSPOSE Vcur-3 (reshaped) (transposed) el = 0.32298362 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#117: VIEW cache_v_l3 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#117: VIEW cache_v_l3 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#118: CPY cache_v_l3 (view) (copy of Vcur-3 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#118: CPY cache_v_l3 (view) (copy of Vcur-3 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #117: VIEW cache_v_l3 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #117: VIEW cache_v_l3 (view) el = 0.32299805 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#118: CPY cache_v_l3 (view) (copy of Vcur-3 (reshaped) (transposed)) el = 0.32299805 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#118: CPY cache_v_l3 (view) (copy of Vcur-3 (reshaped) (transposed)) el = 0.32299805 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #121: PERMUTE Qcur-3 (permuted) el = 0.02503397 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #121: PERMUTE Qcur-3 (permuted) el = -0.23770249 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #124: MUL_MAT node_124 el = 0.01466104 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -231,17 +231,17 @@ db_num_tokens = 1
 >>> #146: RESHAPE Vcur-4 el = 0.01700668 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #146: RESHAPE Vcur-4 el = 0.01700665 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #147: VIEW cache_k_l4 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #147: VIEW cache_k_l4 (view) el = 0.19844621 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #148: CPY cache_k_l4 (view) (copy of Kcur-4) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #148: CPY cache_k_l4 (view) (copy of Kcur-4) el = 0.19844621 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #147: VIEW cache_k_l4 (view) el = 0.34277344 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#148: CPY cache_k_l4 (view) (copy of Kcur-4) el = 0.34277344 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#148: CPY cache_k_l4 (view) (copy of Kcur-4) el = 0.34277344 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #149: RESHAPE Vcur-4 (reshaped) el = 0.01700668 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #149: RESHAPE Vcur-4 (reshaped) el = 0.01700665 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #150: TRANSPOSE Vcur-4 (reshaped) (transposed) el = 0.01700668 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #150: TRANSPOSE Vcur-4 (reshaped) (transposed) el = 0.00430461 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #150: TRANSPOSE Vcur-4 (reshaped) (transposed) el = 0.01700665 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#151: VIEW cache_v_l4 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#151: VIEW cache_v_l4 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#152: CPY cache_v_l4 (view) (copy of Vcur-4 (reshaped) (transposed)) el = -0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#152: CPY cache_v_l4 (view) (copy of Vcur-4 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #151: VIEW cache_v_l4 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #151: VIEW cache_v_l4 (view) el = 0.01701355 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#152: CPY cache_v_l4 (view) (copy of Vcur-4 (reshaped) (transposed)) el = 0.01701355 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#152: CPY cache_v_l4 (view) (copy of Vcur-4 (reshaped) (transposed)) el = 0.01701355 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #155: PERMUTE Qcur-4 (permuted) el = -0.06054270 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #155: PERMUTE Qcur-4 (permuted) el = 0.38956112 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #158: MUL_MAT node_158 el = 0.01718871 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -283,17 +283,17 @@ db_num_tokens = 1
 >>> #180: RESHAPE Vcur-5 el = -0.19387233 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #180: RESHAPE Vcur-5 el = -0.19387254 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #181: VIEW cache_k_l5 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #181: VIEW cache_k_l5 (view) el = -0.00000013 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #182: CPY cache_k_l5 (view) (copy of Kcur-5) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #182: CPY cache_k_l5 (view) (copy of Kcur-5) el = -0.00000013 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #181: VIEW cache_k_l5 (view) el = -0.42285156 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#182: CPY cache_k_l5 (view) (copy of Kcur-5) el = -0.42285156 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#182: CPY cache_k_l5 (view) (copy of Kcur-5) el = -0.42285156 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #183: RESHAPE Vcur-5 (reshaped) el = -0.19387233 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #183: RESHAPE Vcur-5 (reshaped) el = -0.19387254 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #184: TRANSPOSE Vcur-5 (reshaped) (transposed) el = -0.19387233 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #184: TRANSPOSE Vcur-5 (reshaped) (transposed) el = -0.00373117 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #184: TRANSPOSE Vcur-5 (reshaped) (transposed) el = -0.19387254 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#185: VIEW cache_v_l5 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#185: VIEW cache_v_l5 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #186: CPY cache_v_l5 (view) (copy of Vcur-5 (reshaped) (transposed)) el = -0.00002708 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #186: CPY cache_v_l5 (view) (copy of Vcur-5 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #185: VIEW cache_v_l5 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #185: VIEW cache_v_l5 (view) el = -0.19384766 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#186: CPY cache_v_l5 (view) (copy of Vcur-5 (reshaped) (transposed)) el = -0.19384766 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#186: CPY cache_v_l5 (view) (copy of Vcur-5 (reshaped) (transposed)) el = -0.19384766 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #189: PERMUTE Qcur-5 (permuted) el = -0.06419145 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #189: PERMUTE Qcur-5 (permuted) el = -0.26660660 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #192: MUL_MAT node_192 el = 0.02784215 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -334,18 +334,18 @@ db_num_tokens = 1
 >>> #213: MUL_MAT Vcur-6 el = -0.01085979 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #214: RESHAPE Vcur-6 el = -0.01085931 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #214: RESHAPE Vcur-6 el = -0.01085979 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#215: VIEW cache_k_l6 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#215: VIEW cache_k_l6 (view) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#216: CPY cache_k_l6 (view) (copy of Kcur-6) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#216: CPY cache_k_l6 (view) (copy of Kcur-6) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #215: VIEW cache_k_l6 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #215: VIEW cache_k_l6 (view) el = 0.42773438 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#216: CPY cache_k_l6 (view) (copy of Kcur-6) el = 0.42773438 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#216: CPY cache_k_l6 (view) (copy of Kcur-6) el = 0.42773438 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #217: RESHAPE Vcur-6 (reshaped) el = -0.01085931 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #217: RESHAPE Vcur-6 (reshaped) el = -0.01085979 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #218: TRANSPOSE Vcur-6 (reshaped) (transposed) el = -0.01085931 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #218: TRANSPOSE Vcur-6 (reshaped) (transposed) el = -0.01293879 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #218: TRANSPOSE Vcur-6 (reshaped) (transposed) el = -0.01085979 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#219: VIEW cache_v_l6 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#219: VIEW cache_v_l6 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #220: CPY cache_v_l6 (view) (copy of Vcur-6 (reshaped) (transposed)) el = -0.00000027 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #220: CPY cache_v_l6 (view) (copy of Vcur-6 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #219: VIEW cache_v_l6 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #219: VIEW cache_v_l6 (view) el = -0.01085663 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#220: CPY cache_v_l6 (view) (copy of Vcur-6 (reshaped) (transposed)) el = -0.01085663 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#220: CPY cache_v_l6 (view) (copy of Vcur-6 (reshaped) (transposed)) el = -0.01085663 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #223: PERMUTE Qcur-6 (permuted) el = 0.00287846 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #223: PERMUTE Qcur-6 (permuted) el = 0.21929665 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #226: MUL_MAT node_226 el = -0.05037208 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -387,17 +387,17 @@ db_num_tokens = 1
 >>> #248: RESHAPE Vcur-7 el = 0.25220400 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #248: RESHAPE Vcur-7 el = 0.25220397 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #249: VIEW cache_k_l7 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #249: VIEW cache_k_l7 (view) el = 0.00000257 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #250: CPY cache_k_l7 (view) (copy of Kcur-7) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #250: CPY cache_k_l7 (view) (copy of Kcur-7) el = 0.00000257 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #249: VIEW cache_k_l7 (view) el = 0.13562012 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#250: CPY cache_k_l7 (view) (copy of Kcur-7) el = 0.13562012 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#250: CPY cache_k_l7 (view) (copy of Kcur-7) el = 0.13562012 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #251: RESHAPE Vcur-7 (reshaped) el = 0.25220400 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #251: RESHAPE Vcur-7 (reshaped) el = 0.25220397 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #252: TRANSPOSE Vcur-7 (reshaped) (transposed) el = 0.25220400 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #252: TRANSPOSE Vcur-7 (reshaped) (transposed) el = -0.00002400 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #252: TRANSPOSE Vcur-7 (reshaped) (transposed) el = 0.25220397 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#253: VIEW cache_v_l7 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#253: VIEW cache_v_l7 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#254: CPY cache_v_l7 (view) (copy of Vcur-7 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#254: CPY cache_v_l7 (view) (copy of Vcur-7 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #253: VIEW cache_v_l7 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #253: VIEW cache_v_l7 (view) el = 0.25219727 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#254: CPY cache_v_l7 (view) (copy of Vcur-7 (reshaped) (transposed)) el = 0.25219727 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#254: CPY cache_v_l7 (view) (copy of Vcur-7 (reshaped) (transposed)) el = 0.25219727 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #257: PERMUTE Qcur-7 (permuted) el = -0.03643839 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #257: PERMUTE Qcur-7 (permuted) el = 0.25148553 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #260: MUL_MAT node_260 el = -0.03638263 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -438,18 +438,18 @@ db_num_tokens = 1
 >>> #281: MUL_MAT Vcur-8 el = -0.74419445 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #282: RESHAPE Vcur-8 el = -0.74419439 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #282: RESHAPE Vcur-8 el = -0.74419445 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#283: VIEW cache_k_l8 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#283: VIEW cache_k_l8 (view) el = -0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#284: CPY cache_k_l8 (view) (copy of Kcur-8) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#284: CPY cache_k_l8 (view) (copy of Kcur-8) el = -0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #283: VIEW cache_k_l8 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #283: VIEW cache_k_l8 (view) el = -0.08148193 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#284: CPY cache_k_l8 (view) (copy of Kcur-8) el = -0.08148193 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#284: CPY cache_k_l8 (view) (copy of Kcur-8) el = -0.08148193 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #285: RESHAPE Vcur-8 (reshaped) el = -0.74419439 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #285: RESHAPE Vcur-8 (reshaped) el = -0.74419445 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #286: TRANSPOSE Vcur-8 (reshaped) (transposed) el = -0.74419439 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #286: TRANSPOSE Vcur-8 (reshaped) (transposed) el = 0.01827875 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #286: TRANSPOSE Vcur-8 (reshaped) (transposed) el = -0.74419445 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#287: VIEW cache_v_l8 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#287: VIEW cache_v_l8 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #288: CPY cache_v_l8 (view) (copy of Vcur-8 (reshaped) (transposed)) el = 0.00000001 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #288: CPY cache_v_l8 (view) (copy of Vcur-8 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #287: VIEW cache_v_l8 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #287: VIEW cache_v_l8 (view) el = -0.74414062 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#288: CPY cache_v_l8 (view) (copy of Vcur-8 (reshaped) (transposed)) el = -0.74414062 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#288: CPY cache_v_l8 (view) (copy of Vcur-8 (reshaped) (transposed)) el = -0.74414062 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #291: PERMUTE Qcur-8 (permuted) el = 0.13333857 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #291: PERMUTE Qcur-8 (permuted) el = 0.60868227 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #294: MUL_MAT node_294 el = -0.00267667 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -490,18 +490,18 @@ db_num_tokens = 1
 >>> #315: MUL_MAT Vcur-9 el = -0.13676712 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #316: RESHAPE Vcur-9 el = -0.13676733 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #316: RESHAPE Vcur-9 el = -0.13676712 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#317: VIEW cache_k_l9 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#317: VIEW cache_k_l9 (view) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#318: CPY cache_k_l9 (view) (copy of Kcur-9) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#318: CPY cache_k_l9 (view) (copy of Kcur-9) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #317: VIEW cache_k_l9 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #317: VIEW cache_k_l9 (view) el = -0.46459961 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#318: CPY cache_k_l9 (view) (copy of Kcur-9) el = -0.46459961 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#318: CPY cache_k_l9 (view) (copy of Kcur-9) el = -0.46459961 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #319: RESHAPE Vcur-9 (reshaped) el = -0.13676733 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #319: RESHAPE Vcur-9 (reshaped) el = -0.13676712 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #320: TRANSPOSE Vcur-9 (reshaped) (transposed) el = -0.13676733 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #320: TRANSPOSE Vcur-9 (reshaped) (transposed) el = -0.00539325 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #320: TRANSPOSE Vcur-9 (reshaped) (transposed) el = -0.13676712 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#321: VIEW cache_v_l9 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#321: VIEW cache_v_l9 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#322: CPY cache_v_l9 (view) (copy of Vcur-9 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#322: CPY cache_v_l9 (view) (copy of Vcur-9 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #321: VIEW cache_v_l9 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #321: VIEW cache_v_l9 (view) el = -0.13671875 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#322: CPY cache_v_l9 (view) (copy of Vcur-9 (reshaped) (transposed)) el = -0.13671875 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#322: CPY cache_v_l9 (view) (copy of Vcur-9 (reshaped) (transposed)) el = -0.13671875 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #325: PERMUTE Qcur-9 (permuted) el = 0.12870291 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #325: PERMUTE Qcur-9 (permuted) el = -0.13135725 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #328: MUL_MAT node_328 el = 0.00249684 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -543,17 +543,17 @@ db_num_tokens = 1
 >>> #350: RESHAPE Vcur-10 el = -0.62858927 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #350: RESHAPE Vcur-10 el = -0.62858921 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #351: VIEW cache_k_l10 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #351: VIEW cache_k_l10 (view) el = 0.00022093 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #352: CPY cache_k_l10 (view) (copy of Kcur-10) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #352: CPY cache_k_l10 (view) (copy of Kcur-10) el = 0.00022093 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #351: VIEW cache_k_l10 (view) el = -0.03784180 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#352: CPY cache_k_l10 (view) (copy of Kcur-10) el = -0.03784180 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#352: CPY cache_k_l10 (view) (copy of Kcur-10) el = -0.03784180 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #353: RESHAPE Vcur-10 (reshaped) el = -0.62858927 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #353: RESHAPE Vcur-10 (reshaped) el = -0.62858921 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #354: TRANSPOSE Vcur-10 (reshaped) (transposed) el = -0.62858927 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #354: TRANSPOSE Vcur-10 (reshaped) (transposed) el = 0.00132956 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #354: TRANSPOSE Vcur-10 (reshaped) (transposed) el = -0.62858921 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#355: VIEW cache_v_l10 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#355: VIEW cache_v_l10 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #356: CPY cache_v_l10 (view) (copy of Vcur-10 (reshaped) (transposed)) el = -0.00000057 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #356: CPY cache_v_l10 (view) (copy of Vcur-10 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #355: VIEW cache_v_l10 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #355: VIEW cache_v_l10 (view) el = -0.62841797 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#356: CPY cache_v_l10 (view) (copy of Vcur-10 (reshaped) (transposed)) el = -0.62841797 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#356: CPY cache_v_l10 (view) (copy of Vcur-10 (reshaped) (transposed)) el = -0.62841797 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #359: PERMUTE Qcur-10 (permuted) el = 0.00284693 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #359: PERMUTE Qcur-10 (permuted) el = -0.90026343 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #362: MUL_MAT node_362 el = -0.00061655 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -595,17 +595,17 @@ db_num_tokens = 1
 >>> #384: RESHAPE Vcur-11 el = -0.00917595 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #384: RESHAPE Vcur-11 el = -0.00917600 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #385: VIEW cache_k_l11 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #385: VIEW cache_k_l11 (view) el = -0.00000003 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #386: CPY cache_k_l11 (view) (copy of Kcur-11) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #386: CPY cache_k_l11 (view) (copy of Kcur-11) el = -0.00000003 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #385: VIEW cache_k_l11 (view) el = 0.47314453 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#386: CPY cache_k_l11 (view) (copy of Kcur-11) el = 0.47314453 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#386: CPY cache_k_l11 (view) (copy of Kcur-11) el = 0.47314453 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #387: RESHAPE Vcur-11 (reshaped) el = -0.00917595 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #387: RESHAPE Vcur-11 (reshaped) el = -0.00917600 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #388: TRANSPOSE Vcur-11 (reshaped) (transposed) el = -0.00917595 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #388: TRANSPOSE Vcur-11 (reshaped) (transposed) el = 0.01502085 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #388: TRANSPOSE Vcur-11 (reshaped) (transposed) el = -0.00917600 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#389: VIEW cache_v_l11 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#389: VIEW cache_v_l11 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #390: CPY cache_v_l11 (view) (copy of Vcur-11 (reshaped) (transposed)) el = -0.00033971 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #390: CPY cache_v_l11 (view) (copy of Vcur-11 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #389: VIEW cache_v_l11 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #389: VIEW cache_v_l11 (view) el = -0.00917816 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#390: CPY cache_v_l11 (view) (copy of Vcur-11 (reshaped) (transposed)) el = -0.00917816 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#390: CPY cache_v_l11 (view) (copy of Vcur-11 (reshaped) (transposed)) el = -0.00917816 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #393: PERMUTE Qcur-11 (permuted) el = -0.08692528 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #393: PERMUTE Qcur-11 (permuted) el = -0.31350070 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #396: MUL_MAT node_396 el = -0.04057151 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -646,18 +646,18 @@ db_num_tokens = 1
 >>> #417: MUL_MAT Vcur-12 el = 0.24438614 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #418: RESHAPE Vcur-12 el = 0.24438640 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #418: RESHAPE Vcur-12 el = 0.24438614 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#419: VIEW cache_k_l12 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#419: VIEW cache_k_l12 (view) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#420: CPY cache_k_l12 (view) (copy of Kcur-12) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#420: CPY cache_k_l12 (view) (copy of Kcur-12) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #419: VIEW cache_k_l12 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #419: VIEW cache_k_l12 (view) el = -0.46142578 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#420: CPY cache_k_l12 (view) (copy of Kcur-12) el = -0.46142578 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#420: CPY cache_k_l12 (view) (copy of Kcur-12) el = -0.46142578 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #421: RESHAPE Vcur-12 (reshaped) el = 0.24438640 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #421: RESHAPE Vcur-12 (reshaped) el = 0.24438614 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #422: TRANSPOSE Vcur-12 (reshaped) (transposed) el = 0.24438640 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #422: TRANSPOSE Vcur-12 (reshaped) (transposed) el = 0.00782750 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #422: TRANSPOSE Vcur-12 (reshaped) (transposed) el = 0.24438614 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#423: VIEW cache_v_l12 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#423: VIEW cache_v_l12 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #424: CPY cache_v_l12 (view) (copy of Vcur-12 (reshaped) (transposed)) el = 0.00001184 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #424: CPY cache_v_l12 (view) (copy of Vcur-12 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #423: VIEW cache_v_l12 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #423: VIEW cache_v_l12 (view) el = 0.24438477 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#424: CPY cache_v_l12 (view) (copy of Vcur-12 (reshaped) (transposed)) el = 0.24438477 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#424: CPY cache_v_l12 (view) (copy of Vcur-12 (reshaped) (transposed)) el = 0.24438477 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #427: PERMUTE Qcur-12 (permuted) el = 0.03674905 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #427: PERMUTE Qcur-12 (permuted) el = 1.67652595 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #430: MUL_MAT node_430 el = -0.02315142 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -699,17 +699,17 @@ db_num_tokens = 1
 >>> #452: RESHAPE Vcur-13 el = 0.12925601 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #452: RESHAPE Vcur-13 el = 0.12925613 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #453: VIEW cache_k_l13 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #453: VIEW cache_k_l13 (view) el = -0.00001179 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #454: CPY cache_k_l13 (view) (copy of Kcur-13) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #454: CPY cache_k_l13 (view) (copy of Kcur-13) el = -0.00001179 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #453: VIEW cache_k_l13 (view) el = -0.76953125 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#454: CPY cache_k_l13 (view) (copy of Kcur-13) el = -0.76953125 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#454: CPY cache_k_l13 (view) (copy of Kcur-13) el = -0.76953125 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #455: RESHAPE Vcur-13 (reshaped) el = 0.12925601 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #455: RESHAPE Vcur-13 (reshaped) el = 0.12925613 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #456: TRANSPOSE Vcur-13 (reshaped) (transposed) el = 0.12925601 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #456: TRANSPOSE Vcur-13 (reshaped) (transposed) el = 0.05740395 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #456: TRANSPOSE Vcur-13 (reshaped) (transposed) el = 0.12925613 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#457: VIEW cache_v_l13 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#457: VIEW cache_v_l13 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#458: CPY cache_v_l13 (view) (copy of Vcur-13 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#458: CPY cache_v_l13 (view) (copy of Vcur-13 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #457: VIEW cache_v_l13 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #457: VIEW cache_v_l13 (view) el = 0.12927246 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#458: CPY cache_v_l13 (view) (copy of Vcur-13 (reshaped) (transposed)) el = 0.12927246 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#458: CPY cache_v_l13 (view) (copy of Vcur-13 (reshaped) (transposed)) el = 0.12927246 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #461: PERMUTE Qcur-13 (permuted) el = -0.14938429 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #461: PERMUTE Qcur-13 (permuted) el = 0.00578305 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #464: MUL_MAT node_464 el = 0.00584303 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -751,17 +751,17 @@ db_num_tokens = 1
 >>> #486: RESHAPE Vcur-14 el = 0.27907360 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #486: RESHAPE Vcur-14 el = 0.27907348 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #487: VIEW cache_k_l14 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #487: VIEW cache_k_l14 (view) el = 0.00318410 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #488: CPY cache_k_l14 (view) (copy of Kcur-14) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #488: CPY cache_k_l14 (view) (copy of Kcur-14) el = 0.00318410 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #487: VIEW cache_k_l14 (view) el = -0.06707764 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#488: CPY cache_k_l14 (view) (copy of Kcur-14) el = -0.06707764 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#488: CPY cache_k_l14 (view) (copy of Kcur-14) el = -0.06707764 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #489: RESHAPE Vcur-14 (reshaped) el = 0.27907360 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #489: RESHAPE Vcur-14 (reshaped) el = 0.27907348 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #490: TRANSPOSE Vcur-14 (reshaped) (transposed) el = 0.27907360 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #490: TRANSPOSE Vcur-14 (reshaped) (transposed) el = 0.00341329 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #490: TRANSPOSE Vcur-14 (reshaped) (transposed) el = 0.27907348 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#491: VIEW cache_v_l14 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#491: VIEW cache_v_l14 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #492: CPY cache_v_l14 (view) (copy of Vcur-14 (reshaped) (transposed)) el = 0.00000265 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #492: CPY cache_v_l14 (view) (copy of Vcur-14 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #491: VIEW cache_v_l14 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #491: VIEW cache_v_l14 (view) el = 0.27905273 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#492: CPY cache_v_l14 (view) (copy of Vcur-14 (reshaped) (transposed)) el = 0.27905273 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#492: CPY cache_v_l14 (view) (copy of Vcur-14 (reshaped) (transposed)) el = 0.27905273 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #495: PERMUTE Qcur-14 (permuted) el = -0.06611808 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #495: PERMUTE Qcur-14 (permuted) el = -0.75863123 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #498: MUL_MAT node_498 el = 0.17201696 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -803,17 +803,17 @@ db_num_tokens = 1
 >>> #520: RESHAPE Vcur-15 el = -0.00741325 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #520: RESHAPE Vcur-15 el = -0.00741333 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #521: VIEW cache_k_l15 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #521: VIEW cache_k_l15 (view) el = 0.00000068 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #522: CPY cache_k_l15 (view) (copy of Kcur-15) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #522: CPY cache_k_l15 (view) (copy of Kcur-15) el = 0.00000068 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #521: VIEW cache_k_l15 (view) el = -1.01269531 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#522: CPY cache_k_l15 (view) (copy of Kcur-15) el = -1.01269531 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#522: CPY cache_k_l15 (view) (copy of Kcur-15) el = -1.01269531 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #523: RESHAPE Vcur-15 (reshaped) el = -0.00741325 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #523: RESHAPE Vcur-15 (reshaped) el = -0.00741333 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #524: TRANSPOSE Vcur-15 (reshaped) (transposed) el = -0.00741325 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #524: TRANSPOSE Vcur-15 (reshaped) (transposed) el = -0.01501312 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #524: TRANSPOSE Vcur-15 (reshaped) (transposed) el = -0.00741333 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#525: VIEW cache_v_l15 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#525: VIEW cache_v_l15 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #526: CPY cache_v_l15 (view) (copy of Vcur-15 (reshaped) (transposed)) el = -0.00000005 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #526: CPY cache_v_l15 (view) (copy of Vcur-15 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #525: VIEW cache_v_l15 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #525: VIEW cache_v_l15 (view) el = -0.00741196 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#526: CPY cache_v_l15 (view) (copy of Vcur-15 (reshaped) (transposed)) el = -0.00741196 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#526: CPY cache_v_l15 (view) (copy of Vcur-15 (reshaped) (transposed)) el = -0.00741196 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #529: PERMUTE Qcur-15 (permuted) el = -0.03651955 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #529: PERMUTE Qcur-15 (permuted) el = 0.51166236 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #532: MUL_MAT node_532 el = -0.00314093 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -855,17 +855,17 @@ db_num_tokens = 1
 >>> #554: RESHAPE Vcur-16 el = -0.20089090 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #554: RESHAPE Vcur-16 el = -0.20089108 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #555: VIEW cache_k_l16 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #555: VIEW cache_k_l16 (view) el = 0.00000134 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #556: CPY cache_k_l16 (view) (copy of Kcur-16) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #556: CPY cache_k_l16 (view) (copy of Kcur-16) el = 0.00000134 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #555: VIEW cache_k_l16 (view) el = -0.39599609 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#556: CPY cache_k_l16 (view) (copy of Kcur-16) el = -0.39599609 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#556: CPY cache_k_l16 (view) (copy of Kcur-16) el = -0.39599609 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #557: RESHAPE Vcur-16 (reshaped) el = -0.20089090 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #557: RESHAPE Vcur-16 (reshaped) el = -0.20089108 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #558: TRANSPOSE Vcur-16 (reshaped) (transposed) el = -0.20089090 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #558: TRANSPOSE Vcur-16 (reshaped) (transposed) el = -0.01557309 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #558: TRANSPOSE Vcur-16 (reshaped) (transposed) el = -0.20089108 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#559: VIEW cache_v_l16 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#559: VIEW cache_v_l16 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #560: CPY cache_v_l16 (view) (copy of Vcur-16 (reshaped) (transposed)) el = 0.00020372 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #560: CPY cache_v_l16 (view) (copy of Vcur-16 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #559: VIEW cache_v_l16 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #559: VIEW cache_v_l16 (view) el = -0.20092773 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#560: CPY cache_v_l16 (view) (copy of Vcur-16 (reshaped) (transposed)) el = -0.20092773 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#560: CPY cache_v_l16 (view) (copy of Vcur-16 (reshaped) (transposed)) el = -0.20092773 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #563: PERMUTE Qcur-16 (permuted) el = -0.12956294 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #563: PERMUTE Qcur-16 (permuted) el = 0.12232055 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #566: MUL_MAT node_566 el = -0.02340006 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -907,17 +907,17 @@ db_num_tokens = 1
 >>> #588: RESHAPE Vcur-17 el = -0.67279005 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #588: RESHAPE Vcur-17 el = -0.67278987 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #589: VIEW cache_k_l17 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #589: VIEW cache_k_l17 (view) el = 0.00012026 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #590: CPY cache_k_l17 (view) (copy of Kcur-17) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #590: CPY cache_k_l17 (view) (copy of Kcur-17) el = 0.00012026 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #589: VIEW cache_k_l17 (view) el = 0.23974609 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#590: CPY cache_k_l17 (view) (copy of Kcur-17) el = 0.23974609 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+#590: CPY cache_k_l17 (view) (copy of Kcur-17) el = 0.23974609 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #591: RESHAPE Vcur-17 (reshaped) el = -0.67279005 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #591: RESHAPE Vcur-17 (reshaped) el = -0.67278987 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #592: TRANSPOSE Vcur-17 (reshaped) (transposed) el = -0.67279005 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #592: TRANSPOSE Vcur-17 (reshaped) (transposed) el = 0.00943062 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #592: TRANSPOSE Vcur-17 (reshaped) (transposed) el = -0.67278987 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#593: VIEW cache_v_l17 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#593: VIEW cache_v_l17 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #594: CPY cache_v_l17 (view) (copy of Vcur-17 (reshaped) (transposed)) el = -0.00000001 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #594: CPY cache_v_l17 (view) (copy of Vcur-17 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #593: VIEW cache_v_l17 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #593: VIEW cache_v_l17 (view) el = -0.67285156 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#594: CPY cache_v_l17 (view) (copy of Vcur-17 (reshaped) (transposed)) el = -0.67285156 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+#594: CPY cache_v_l17 (view) (copy of Vcur-17 (reshaped) (transposed)) el = -0.67285156 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #597: PERMUTE Qcur-17 (permuted) el = -0.12005780 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #597: PERMUTE Qcur-17 (permuted) el = 0.25291139 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 #600: MUL_MAT node_600 el = -0.02367921 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -959,17 +959,17 @@ db_num_tokens = 1
 >>> #622: RESHAPE Vcur-18 el = -0.48170406 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #622: RESHAPE Vcur-18 el = -0.48595834 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #623: VIEW cache_k_l18 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #623: VIEW cache_k_l18 (view) el = 0.00009975 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #624: CPY cache_k_l18 (view) (copy of Kcur-18) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #624: CPY cache_k_l18 (view) (copy of Kcur-18) el = 0.00010023 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #623: VIEW cache_k_l18 (view) el = 0.17260742 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #624: CPY cache_k_l18 (view) (copy of Kcur-18) el = 0.17260742 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #624: CPY cache_k_l18 (view) (copy of Kcur-18) el = 0.16638184 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #625: RESHAPE Vcur-18 (reshaped) el = -0.48170406 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #625: RESHAPE Vcur-18 (reshaped) el = -0.48595834 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #626: TRANSPOSE Vcur-18 (reshaped) (transposed) el = -0.48170406 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #626: TRANSPOSE Vcur-18 (reshaped) (transposed) el = -0.01991527 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #626: TRANSPOSE Vcur-18 (reshaped) (transposed) el = -0.48595834 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#627: VIEW cache_v_l18 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#627: VIEW cache_v_l18 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#628: CPY cache_v_l18 (view) (copy of Vcur-18 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#628: CPY cache_v_l18 (view) (copy of Vcur-18 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #627: VIEW cache_v_l18 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #627: VIEW cache_v_l18 (view) el = -0.48168945 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #628: CPY cache_v_l18 (view) (copy of Vcur-18 (reshaped) (transposed)) el = -0.48168945 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #628: CPY cache_v_l18 (view) (copy of Vcur-18 (reshaped) (transposed)) el = -0.48583984 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #631: PERMUTE Qcur-18 (permuted) el = -0.03743152 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #631: PERMUTE Qcur-18 (permuted) el = -0.45126593 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #634: MUL_MAT node_634 el = 0.00214575 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1011,17 +1011,17 @@ db_num_tokens = 1
 >>> #656: RESHAPE Vcur-19 el = -0.28489697 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #656: RESHAPE Vcur-19 el = -0.27402568 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #657: VIEW cache_k_l19 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #657: VIEW cache_k_l19 (view) el = 0.00008043 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #658: CPY cache_k_l19 (view) (copy of Kcur-19) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #658: CPY cache_k_l19 (view) (copy of Kcur-19) el = 0.00008091 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #657: VIEW cache_k_l19 (view) el = -0.11267090 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #658: CPY cache_k_l19 (view) (copy of Kcur-19) el = -0.11267090 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #658: CPY cache_k_l19 (view) (copy of Kcur-19) el = -0.11706543 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #659: RESHAPE Vcur-19 (reshaped) el = -0.28489697 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #659: RESHAPE Vcur-19 (reshaped) el = -0.27402568 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #660: TRANSPOSE Vcur-19 (reshaped) (transposed) el = -0.28489697 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #660: TRANSPOSE Vcur-19 (reshaped) (transposed) el = -0.00627197 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #660: TRANSPOSE Vcur-19 (reshaped) (transposed) el = -0.27402568 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#661: VIEW cache_v_l19 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#661: VIEW cache_v_l19 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#662: CPY cache_v_l19 (view) (copy of Vcur-19 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#662: CPY cache_v_l19 (view) (copy of Vcur-19 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #661: VIEW cache_v_l19 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #661: VIEW cache_v_l19 (view) el = -0.28491211 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #662: CPY cache_v_l19 (view) (copy of Vcur-19 (reshaped) (transposed)) el = -0.28491211 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #662: CPY cache_v_l19 (view) (copy of Vcur-19 (reshaped) (transposed)) el = -0.27392578 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #665: PERMUTE Qcur-19 (permuted) el = -0.12156124 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #665: PERMUTE Qcur-19 (permuted) el = -0.00977382 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #668: MUL_MAT node_668 el = -0.00400364 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1063,17 +1063,17 @@ db_num_tokens = 1
 >>> #690: RESHAPE Vcur-20 el = -0.06951416 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #690: RESHAPE Vcur-20 el = -0.07100642 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #691: VIEW cache_k_l20 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #691: VIEW cache_k_l20 (view) el = 0.00000283 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #692: CPY cache_k_l20 (view) (copy of Kcur-20) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #692: CPY cache_k_l20 (view) (copy of Kcur-20) el = 0.00000306 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #691: VIEW cache_k_l20 (view) el = 0.25561523 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #692: CPY cache_k_l20 (view) (copy of Kcur-20) el = 0.25561523 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #692: CPY cache_k_l20 (view) (copy of Kcur-20) el = 0.25854492 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #693: RESHAPE Vcur-20 (reshaped) el = -0.06951416 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #693: RESHAPE Vcur-20 (reshaped) el = -0.07100642 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #694: TRANSPOSE Vcur-20 (reshaped) (transposed) el = -0.06951416 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #694: TRANSPOSE Vcur-20 (reshaped) (transposed) el = 0.00430079 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #694: TRANSPOSE Vcur-20 (reshaped) (transposed) el = -0.07100642 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#695: VIEW cache_v_l20 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#695: VIEW cache_v_l20 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #696: CPY cache_v_l20 (view) (copy of Vcur-20 (reshaped) (transposed)) el = 0.00004008 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #696: CPY cache_v_l20 (view) (copy of Vcur-20 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #695: VIEW cache_v_l20 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #695: VIEW cache_v_l20 (view) el = -0.06951904 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #696: CPY cache_v_l20 (view) (copy of Vcur-20 (reshaped) (transposed)) el = -0.06951904 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #696: CPY cache_v_l20 (view) (copy of Vcur-20 (reshaped) (transposed)) el = -0.07098389 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #699: PERMUTE Qcur-20 (permuted) el = -0.08029287 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #699: PERMUTE Qcur-20 (permuted) el = 0.02700026 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #702: MUL_MAT node_702 el = 0.00559345 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1114,18 +1114,18 @@ db_num_tokens = 1
 >>> #723: MUL_MAT Vcur-21 el = -0.39910406 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #724: RESHAPE Vcur-21 el = -0.41046792 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #724: RESHAPE Vcur-21 el = -0.39910406 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#725: VIEW cache_k_l21 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#725: VIEW cache_k_l21 (view) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#726: CPY cache_k_l21 (view) (copy of Kcur-21) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#726: CPY cache_k_l21 (view) (copy of Kcur-21) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #725: VIEW cache_k_l21 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #725: VIEW cache_k_l21 (view) el = 0.29443359 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #726: CPY cache_k_l21 (view) (copy of Kcur-21) el = 0.29443359 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #726: CPY cache_k_l21 (view) (copy of Kcur-21) el = 0.29370117 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #727: RESHAPE Vcur-21 (reshaped) el = -0.41046792 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #727: RESHAPE Vcur-21 (reshaped) el = -0.39910406 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #728: TRANSPOSE Vcur-21 (reshaped) (transposed) el = -0.41046792 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #728: TRANSPOSE Vcur-21 (reshaped) (transposed) el = -0.02846144 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #728: TRANSPOSE Vcur-21 (reshaped) (transposed) el = -0.39910406 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#729: VIEW cache_v_l21 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#729: VIEW cache_v_l21 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #730: CPY cache_v_l21 (view) (copy of Vcur-21 (reshaped) (transposed)) el = -0.00000216 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #730: CPY cache_v_l21 (view) (copy of Vcur-21 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #729: VIEW cache_v_l21 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #729: VIEW cache_v_l21 (view) el = -0.41040039 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #730: CPY cache_v_l21 (view) (copy of Vcur-21 (reshaped) (transposed)) el = -0.41040039 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #730: CPY cache_v_l21 (view) (copy of Vcur-21 (reshaped) (transposed)) el = -0.39916992 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #733: PERMUTE Qcur-21 (permuted) el = -0.02611437 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #733: PERMUTE Qcur-21 (permuted) el = 0.08459860 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #736: MUL_MAT node_736 el = -0.01741404 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1167,17 +1167,17 @@ db_num_tokens = 1
 >>> #758: RESHAPE Vcur-22 el = 0.33502826 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #758: RESHAPE Vcur-22 el = 0.36118564 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #759: VIEW cache_k_l22 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #759: VIEW cache_k_l22 (view) el = -0.00005489 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #760: CPY cache_k_l22 (view) (copy of Kcur-22) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #760: CPY cache_k_l22 (view) (copy of Kcur-22) el = -0.00005632 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #759: VIEW cache_k_l22 (view) el = 0.54101562 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #760: CPY cache_k_l22 (view) (copy of Kcur-22) el = 0.54101562 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #760: CPY cache_k_l22 (view) (copy of Kcur-22) el = 0.52441406 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #761: RESHAPE Vcur-22 (reshaped) el = 0.33502826 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #761: RESHAPE Vcur-22 (reshaped) el = 0.36118564 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #762: TRANSPOSE Vcur-22 (reshaped) (transposed) el = 0.33502826 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #762: TRANSPOSE Vcur-22 (reshaped) (transposed) el = -0.00696126 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #762: TRANSPOSE Vcur-22 (reshaped) (transposed) el = 0.36118564 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#763: VIEW cache_v_l22 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#763: VIEW cache_v_l22 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #764: CPY cache_v_l22 (view) (copy of Vcur-22 (reshaped) (transposed)) el = 0.00000326 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #764: CPY cache_v_l22 (view) (copy of Vcur-22 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #763: VIEW cache_v_l22 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #763: VIEW cache_v_l22 (view) el = 0.33496094 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #764: CPY cache_v_l22 (view) (copy of Vcur-22 (reshaped) (transposed)) el = 0.33496094 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #764: CPY cache_v_l22 (view) (copy of Vcur-22 (reshaped) (transposed)) el = 0.36108398 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #767: PERMUTE Qcur-22 (permuted) el = -0.06058384 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #767: PERMUTE Qcur-22 (permuted) el = -0.58778799 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #770: MUL_MAT node_770 el = 0.01677440 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1219,17 +1219,17 @@ db_num_tokens = 1
 >>> #792: RESHAPE Vcur-23 el = 0.71042907 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #792: RESHAPE Vcur-23 el = 0.68317658 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #793: VIEW cache_k_l23 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #793: VIEW cache_k_l23 (view) el = -0.00000001 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #794: CPY cache_k_l23 (view) (copy of Kcur-23) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #794: CPY cache_k_l23 (view) (copy of Kcur-23) el = -0.00000001 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #793: VIEW cache_k_l23 (view) el = -0.01174164 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #794: CPY cache_k_l23 (view) (copy of Kcur-23) el = -0.01174164 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #794: CPY cache_k_l23 (view) (copy of Kcur-23) el = -0.01799011 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #795: RESHAPE Vcur-23 (reshaped) el = 0.71042907 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #795: RESHAPE Vcur-23 (reshaped) el = 0.68317658 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #796: TRANSPOSE Vcur-23 (reshaped) (transposed) el = 0.71042907 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #796: TRANSPOSE Vcur-23 (reshaped) (transposed) el = -0.00833504 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #796: TRANSPOSE Vcur-23 (reshaped) (transposed) el = 0.68317658 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#797: VIEW cache_v_l23 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#797: VIEW cache_v_l23 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#798: CPY cache_v_l23 (view) (copy of Vcur-23 (reshaped) (transposed)) el = -0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#798: CPY cache_v_l23 (view) (copy of Vcur-23 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #797: VIEW cache_v_l23 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #797: VIEW cache_v_l23 (view) el = 0.71044922 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #798: CPY cache_v_l23 (view) (copy of Vcur-23 (reshaped) (transposed)) el = 0.71044922 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #798: CPY cache_v_l23 (view) (copy of Vcur-23 (reshaped) (transposed)) el = 0.68310547 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #801: PERMUTE Qcur-23 (permuted) el = 0.06786597 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #801: PERMUTE Qcur-23 (permuted) el = -0.25615942 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #804: MUL_MAT node_804 el = -0.01480319 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1270,18 +1270,18 @@ db_num_tokens = 1
 >>> #825: MUL_MAT Vcur-24 el = 0.26360720 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #826: RESHAPE Vcur-24 el = 0.26648563 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #826: RESHAPE Vcur-24 el = 0.26360720 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#827: VIEW cache_k_l24 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#827: VIEW cache_k_l24 (view) el = -0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#828: CPY cache_k_l24 (view) (copy of Kcur-24) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#828: CPY cache_k_l24 (view) (copy of Kcur-24) el = -0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #827: VIEW cache_k_l24 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #827: VIEW cache_k_l24 (view) el = 1.12304688 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #828: CPY cache_k_l24 (view) (copy of Kcur-24) el = 1.12304688 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #828: CPY cache_k_l24 (view) (copy of Kcur-24) el = 1.14062500 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #829: RESHAPE Vcur-24 (reshaped) el = 0.26648563 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #829: RESHAPE Vcur-24 (reshaped) el = 0.26360720 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #830: TRANSPOSE Vcur-24 (reshaped) (transposed) el = 0.26648563 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #830: TRANSPOSE Vcur-24 (reshaped) (transposed) el = 0.01200350 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #830: TRANSPOSE Vcur-24 (reshaped) (transposed) el = 0.26360720 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#831: VIEW cache_v_l24 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#831: VIEW cache_v_l24 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #832: CPY cache_v_l24 (view) (copy of Vcur-24 (reshaped) (transposed)) el = 0.00000033 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #832: CPY cache_v_l24 (view) (copy of Vcur-24 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #831: VIEW cache_v_l24 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #831: VIEW cache_v_l24 (view) el = 0.26660156 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #832: CPY cache_v_l24 (view) (copy of Vcur-24 (reshaped) (transposed)) el = 0.26660156 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #832: CPY cache_v_l24 (view) (copy of Vcur-24 (reshaped) (transposed)) el = 0.26367188 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #835: PERMUTE Qcur-24 (permuted) el = 0.03503810 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #835: PERMUTE Qcur-24 (permuted) el = 0.96709651 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #838: MUL_MAT node_838 el = 0.00295531 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1322,18 +1322,18 @@ db_num_tokens = 1
 >>> #859: MUL_MAT Vcur-25 el = 0.46475565 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #860: RESHAPE Vcur-25 el = 0.47639602 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #860: RESHAPE Vcur-25 el = 0.46475565 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
-#861: VIEW cache_k_l25 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#861: VIEW cache_k_l25 (view) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#862: CPY cache_k_l25 (view) (copy of Kcur-25) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#862: CPY cache_k_l25 (view) (copy of Kcur-25) el = 0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #861: VIEW cache_k_l25 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #861: VIEW cache_k_l25 (view) el = -0.21179199 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #862: CPY cache_k_l25 (view) (copy of Kcur-25) el = -0.21179199 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #862: CPY cache_k_l25 (view) (copy of Kcur-25) el = -0.21545410 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #863: RESHAPE Vcur-25 (reshaped) el = 0.47639602 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #863: RESHAPE Vcur-25 (reshaped) el = 0.46475565 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #864: TRANSPOSE Vcur-25 (reshaped) (transposed) el = 0.47639602 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #864: TRANSPOSE Vcur-25 (reshaped) (transposed) el = 0.01105979 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #864: TRANSPOSE Vcur-25 (reshaped) (transposed) el = 0.46475565 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#865: VIEW cache_v_l25 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#865: VIEW cache_v_l25 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #866: CPY cache_v_l25 (view) (copy of Vcur-25 (reshaped) (transposed)) el = 0.00000011 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #866: CPY cache_v_l25 (view) (copy of Vcur-25 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #865: VIEW cache_v_l25 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #865: VIEW cache_v_l25 (view) el = 0.47631836 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #866: CPY cache_v_l25 (view) (copy of Vcur-25 (reshaped) (transposed)) el = 0.47631836 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #866: CPY cache_v_l25 (view) (copy of Vcur-25 (reshaped) (transposed)) el = 0.46484375 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #869: PERMUTE Qcur-25 (permuted) el = 0.04789239 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #869: PERMUTE Qcur-25 (permuted) el = -0.32103306 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #872: MUL_MAT node_872 el = 0.04807254 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1375,17 +1375,17 @@ db_num_tokens = 1
 >>> #894: RESHAPE Vcur-26 el = -0.26907825 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #894: RESHAPE Vcur-26 el = -0.28001130 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #895: VIEW cache_k_l26 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #895: VIEW cache_k_l26 (view) el = -0.00000001 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#896: CPY cache_k_l26 (view) (copy of Kcur-26) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
-#896: CPY cache_k_l26 (view) (copy of Kcur-26) el = -0.00000000 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #895: VIEW cache_k_l26 (view) el = 1.08203125 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #896: CPY cache_k_l26 (view) (copy of Kcur-26) el = 1.08203125 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #896: CPY cache_k_l26 (view) (copy of Kcur-26) el = 1.08886719 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #897: RESHAPE Vcur-26 (reshaped) el = -0.26907825 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #897: RESHAPE Vcur-26 (reshaped) el = -0.28001130 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #898: TRANSPOSE Vcur-26 (reshaped) (transposed) el = -0.26907825 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #898: TRANSPOSE Vcur-26 (reshaped) (transposed) el = 0.03789352 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #898: TRANSPOSE Vcur-26 (reshaped) (transposed) el = -0.28001130 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#899: VIEW cache_v_l26 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#899: VIEW cache_v_l26 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #900: CPY cache_v_l26 (view) (copy of Vcur-26 (reshaped) (transposed)) el = -0.03114537 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #900: CPY cache_v_l26 (view) (copy of Vcur-26 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #899: VIEW cache_v_l26 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #899: VIEW cache_v_l26 (view) el = -0.26904297 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #900: CPY cache_v_l26 (view) (copy of Vcur-26 (reshaped) (transposed)) el = -0.26904297 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #900: CPY cache_v_l26 (view) (copy of Vcur-26 (reshaped) (transposed)) el = -0.28002930 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #903: PERMUTE Qcur-26 (permuted) el = -0.08910981 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #903: PERMUTE Qcur-26 (permuted) el = 0.88332939 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #906: MUL_MAT node_906 el = -0.04209961 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1427,17 +1427,17 @@ db_num_tokens = 1
 >>> #928: RESHAPE Vcur-27 el = -0.66743457 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #928: RESHAPE Vcur-27 el = -0.67916286 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #929: VIEW cache_k_l27 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #929: VIEW cache_k_l27 (view) el = 0.00542367 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #930: CPY cache_k_l27 (view) (copy of Kcur-27) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #930: CPY cache_k_l27 (view) (copy of Kcur-27) el = 0.00600350 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #929: VIEW cache_k_l27 (view) el = -0.62890625 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #930: CPY cache_k_l27 (view) (copy of Kcur-27) el = -0.62890625 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #930: CPY cache_k_l27 (view) (copy of Kcur-27) el = -0.62695312 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #931: RESHAPE Vcur-27 (reshaped) el = -0.66743457 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #931: RESHAPE Vcur-27 (reshaped) el = -0.67916286 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #932: TRANSPOSE Vcur-27 (reshaped) (transposed) el = -0.66743457 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #932: TRANSPOSE Vcur-27 (reshaped) (transposed) el = 0.02960436 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #932: TRANSPOSE Vcur-27 (reshaped) (transposed) el = -0.67916286 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#933: VIEW cache_v_l27 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#933: VIEW cache_v_l27 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #934: CPY cache_v_l27 (view) (copy of Vcur-27 (reshaped) (transposed)) el = 0.00001345 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #934: CPY cache_v_l27 (view) (copy of Vcur-27 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #933: VIEW cache_v_l27 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #933: VIEW cache_v_l27 (view) el = -0.66748047 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #934: CPY cache_v_l27 (view) (copy of Vcur-27 (reshaped) (transposed)) el = -0.66748047 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #934: CPY cache_v_l27 (view) (copy of Vcur-27 (reshaped) (transposed)) el = -0.67919922 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #937: PERMUTE Qcur-27 (permuted) el = -2.32797050 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #937: PERMUTE Qcur-27 (permuted) el = -0.68444771 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #940: MUL_MAT node_940 el = -0.01010807 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1479,17 +1479,17 @@ db_num_tokens = 1
 >>> #962: RESHAPE Vcur-28 el = 0.80170047 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #962: RESHAPE Vcur-28 el = 0.77568394 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #963: VIEW cache_k_l28 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #963: VIEW cache_k_l28 (view) el = 0.00001259 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #964: CPY cache_k_l28 (view) (copy of Kcur-28) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #964: CPY cache_k_l28 (view) (copy of Kcur-28) el = 0.00001319 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #963: VIEW cache_k_l28 (view) el = 0.74365234 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #964: CPY cache_k_l28 (view) (copy of Kcur-28) el = 0.74365234 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #964: CPY cache_k_l28 (view) (copy of Kcur-28) el = 0.73925781 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #965: RESHAPE Vcur-28 (reshaped) el = 0.80170047 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #965: RESHAPE Vcur-28 (reshaped) el = 0.77568394 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #966: TRANSPOSE Vcur-28 (reshaped) (transposed) el = 0.80170047 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #966: TRANSPOSE Vcur-28 (reshaped) (transposed) el = -0.00399684 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #966: TRANSPOSE Vcur-28 (reshaped) (transposed) el = 0.77568394 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#967: VIEW cache_v_l28 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#967: VIEW cache_v_l28 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #968: CPY cache_v_l28 (view) (copy of Vcur-28 (reshaped) (transposed)) el = -0.00000183 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #968: CPY cache_v_l28 (view) (copy of Vcur-28 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #967: VIEW cache_v_l28 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #967: VIEW cache_v_l28 (view) el = 0.80175781 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #968: CPY cache_v_l28 (view) (copy of Vcur-28 (reshaped) (transposed)) el = 0.80175781 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #968: CPY cache_v_l28 (view) (copy of Vcur-28 (reshaped) (transposed)) el = 0.77587891 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #971: PERMUTE Qcur-28 (permuted) el = -0.05408597 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #971: PERMUTE Qcur-28 (permuted) el = 0.14412895 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #974: MUL_MAT node_974 el = 0.03134926 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1531,17 +1531,17 @@ db_num_tokens = 1
 >>> #996: RESHAPE Vcur-29 el = 0.31994486 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #996: RESHAPE Vcur-29 el = 0.31581321 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #997: VIEW cache_k_l29 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #997: VIEW cache_k_l29 (view) el = -0.00000066 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #998: CPY cache_k_l29 (view) (copy of Kcur-29) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #998: CPY cache_k_l29 (view) (copy of Kcur-29) el = -0.00000071 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #997: VIEW cache_k_l29 (view) el = -0.91162109 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #998: CPY cache_k_l29 (view) (copy of Kcur-29) el = -0.91162109 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #998: CPY cache_k_l29 (view) (copy of Kcur-29) el = -0.91748047 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #999: RESHAPE Vcur-29 (reshaped) el = 0.31994486 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #999: RESHAPE Vcur-29 (reshaped) el = 0.31581321 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1000: TRANSPOSE Vcur-29 (reshaped) (transposed) el = 0.31994486 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1000: TRANSPOSE Vcur-29 (reshaped) (transposed) el = -0.01119370 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #1000: TRANSPOSE Vcur-29 (reshaped) (transposed) el = 0.31581321 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1001: VIEW cache_v_l29 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1001: VIEW cache_v_l29 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1002: CPY cache_v_l29 (view) (copy of Vcur-29 (reshaped) (transposed)) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1002: CPY cache_v_l29 (view) (copy of Vcur-29 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1001: VIEW cache_v_l29 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1001: VIEW cache_v_l29 (view) el = 0.31982422 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1002: CPY cache_v_l29 (view) (copy of Vcur-29 (reshaped) (transposed)) el = 0.31982422 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1002: CPY cache_v_l29 (view) (copy of Vcur-29 (reshaped) (transposed)) el = 0.31591797 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #1005: PERMUTE Qcur-29 (permuted) el = -0.00956737 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #1005: PERMUTE Qcur-29 (permuted) el = -0.42126486 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #1008: MUL_MAT node_1008 el = -0.00775599 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1583,17 +1583,17 @@ db_num_tokens = 1
 >>> #1030: RESHAPE Vcur-30 el = 0.33185869 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #1030: RESHAPE Vcur-30 el = 0.31318349 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #1031: VIEW cache_k_l30 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1031: VIEW cache_k_l30 (view) el = -0.00075051 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1032: CPY cache_k_l30 (view) (copy of Kcur-30) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1032: CPY cache_k_l30 (view) (copy of Kcur-30) el = -0.00071237 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #1031: VIEW cache_k_l30 (view) el = -1.53320312 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #1032: CPY cache_k_l30 (view) (copy of Kcur-30) el = -1.53320312 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #1032: CPY cache_k_l30 (view) (copy of Kcur-30) el = -1.54589844 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #1033: RESHAPE Vcur-30 (reshaped) el = 0.33185869 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #1033: RESHAPE Vcur-30 (reshaped) el = 0.31318349 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1034: TRANSPOSE Vcur-30 (reshaped) (transposed) el = 0.33185869 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1034: TRANSPOSE Vcur-30 (reshaped) (transposed) el = -0.00991039 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #1034: TRANSPOSE Vcur-30 (reshaped) (transposed) el = 0.31318349 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1035: VIEW cache_v_l30 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1035: VIEW cache_v_l30 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #1036: CPY cache_v_l30 (view) (copy of Vcur-30 (reshaped) (transposed)) el = 0.00002773 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #1036: CPY cache_v_l30 (view) (copy of Vcur-30 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1035: VIEW cache_v_l30 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1035: VIEW cache_v_l30 (view) el = 0.33178711 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1036: CPY cache_v_l30 (view) (copy of Vcur-30 (reshaped) (transposed)) el = 0.33178711 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1036: CPY cache_v_l30 (view) (copy of Vcur-30 (reshaped) (transposed)) el = 0.31323242 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #1039: PERMUTE Qcur-30 (permuted) el = 1.96622610 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #1039: PERMUTE Qcur-30 (permuted) el = -0.13928986 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #1042: MUL_MAT node_1042 el = 0.03841844 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
@@ -1635,17 +1635,17 @@ db_num_tokens = 1
 >>> #1064: RESHAPE Vcur-31 el = 0.92087317 ne[0] = 128 ne[1]= 32 ne[2] = 3 ne [3] = 1
 >>> #1064: RESHAPE Vcur-31 el = 0.92035854 ne[0] = 128 ne[1]= 32 ne[2] = 1 ne [3] = 1
 >>> #1065: VIEW cache_k_l31 (view) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1065: VIEW cache_k_l31 (view) el = 0.00000755 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1066: CPY cache_k_l31 (view) (copy of Kcur-31) el = 0.00000000 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1066: CPY cache_k_l31 (view) (copy of Kcur-31) el = 0.00000925 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #1065: VIEW cache_k_l31 (view) el = 0.75976562 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #1066: CPY cache_k_l31 (view) (copy of Kcur-31) el = 0.75976562 ne[0] = 12288 ne[1]= 1 ne[2] = 1 ne [3] = 1
+>>> #1066: CPY cache_k_l31 (view) (copy of Kcur-31) el = 0.77636719 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
 >>> #1067: RESHAPE Vcur-31 (reshaped) el = 0.92087317 ne[0] = 4096 ne[1]= 3 ne[2] = 1 ne [3] = 1
 >>> #1067: RESHAPE Vcur-31 (reshaped) el = 0.92035854 ne[0] = 4096 ne[1]= 1 ne[2] = 1 ne [3] = 1
->>> #1068: TRANSPOSE Vcur-31 (reshaped) (transposed) el = 0.92087317 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1068: TRANSPOSE Vcur-31 (reshaped) (transposed) el = -0.00226203 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #1068: TRANSPOSE Vcur-31 (reshaped) (transposed) el = 0.92035854 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1069: VIEW cache_v_l31 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
-#1069: VIEW cache_v_l31 (view) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #1070: CPY cache_v_l31 (view) (copy of Vcur-31 (reshaped) (transposed)) el = 0.00000785 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
->>> #1070: CPY cache_v_l31 (view) (copy of Vcur-31 (reshaped) (transposed)) el = 0.00000000 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1069: VIEW cache_v_l31 (view) el = 0.00000000 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1069: VIEW cache_v_l31 (view) el = 0.92089844 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1070: CPY cache_v_l31 (view) (copy of Vcur-31 (reshaped) (transposed)) el = 0.92089844 ne[0] = 3 ne[1]= 4096 ne[2] = 1 ne [3] = 1
+>>> #1070: CPY cache_v_l31 (view) (copy of Vcur-31 (reshaped) (transposed)) el = 0.92041016 ne[0] = 1 ne[1]= 4096 ne[2] = 1 ne [3] = 1
 >>> #1073: PERMUTE Qcur-31 (permuted) el = -0.00884309 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
 >>> #1073: PERMUTE Qcur-31 (permuted) el = 0.25413650 ne[0] = 128 ne[1]= 1 ne[2] = 32 ne [3] = 1
 >>> #1076: MUL_MAT node_1076 el = -0.00788054 ne[0] = 128 ne[1]= 3 ne[2] = 32 ne [3] = 1
